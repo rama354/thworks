@@ -168,8 +168,8 @@ public class RomanNumerals {
 	 * 
 	 */
 	enum RepRuleRegex {
-		RR1("\\w?(III(V?)I+)"), RR2("\\w?(XXXX+)"), RR3("\\w?(CCCC+)"), RR4("\\w?(MMMM+)"), RR5(
-				"(DD+)"), RR6("(LL+)"), RR7("(VV+)");
+		RR1("\\w?(III(V?)I+)"), RR2("\\w?(XXX(L|C?)X+)"), RR3("\\w?(CCC(D|M?)C+)"), RR4("\\w?(MMMM+)"), RR5(
+				"\\w?(DD+)"), RR6("\\w?(LL+)"), RR7("\\w?(VV+)");
 
 		String regex;
 		Pattern pattern;

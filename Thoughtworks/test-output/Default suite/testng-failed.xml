@@ -6,9 +6,9 @@
       <class name="test.MerchantGalaxyGuideTest">
         <methods>
           <include name="cleanSlate"/>
+          <include name="testInValidMPCalculator" invocation-numbers="1"/>
           <include name="testNumTranslatorProcess"/>
           <include name="beforeClass"/>
-          <include name="testInvalidArabicTranslation" invocation-numbers="3 4"/>
         </methods>
       </class> <!-- test.MerchantGalaxyGuideTest -->
     </classes>

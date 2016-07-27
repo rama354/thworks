@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="16" passed="16">
+<testng-results skipped="0" failed="0" total="20" passed="20">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="195" started-at="2016-07-27T20:14:22Z" finished-at="2016-07-27T20:14:22Z">
+  <suite name="Default suite" duration-ms="313" started-at="2016-07-27T20:56:27Z" finished-at="2016-07-27T20:56:28Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="195" started-at="2016-07-27T20:14:22Z" finished-at="2016-07-27T20:14:22Z">
+    <test name="Default test" duration-ms="313" started-at="2016-07-27T20:56:27Z" finished-at="2016-07-27T20:56:28Z">
       <class name="test.MerchantGalaxyGuideTest">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="beforeClass" is-config="true" duration-ms="23" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="beforeClass" is-config="true" duration-ms="26" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="testNumTranslatorProcess([Ljava.lang.String;, main.InputRegex)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testNumTranslatorProcess" duration-ms="18" started-at="2016-07-28T01:44:22Z" data-provider="galaxynumerals" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testNumTranslatorProcess([Ljava.lang.String;, main.InputRegex)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testNumTranslatorProcess" duration-ms="19" started-at="2016-07-28T02:26:27Z" data-provider="galaxynumerals" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@101837c4]]>
+                <![CDATA[[Ljava.lang.String;@7985c1a4]]>
               </value>
             </param>
             <param index="1">
@@ -27,41 +27,91 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNumTranslatorProcess -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testInValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInValidRomanTranslation" duration-ms="4" started-at="2016-07-28T01:44:22Z" data-provider="inValidGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testInValidMPCalculator(java.lang.String, java.lang.String, main.InputRegex)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testInValidMPCalculator" duration-ms="5" started-at="2016-07-28T02:26:27Z" data-provider="invalidMetalprices" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@7484c2bf]]>
+                <![CDATA[pish pish Iron is 3910 Credits]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Iron]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[((?:[a-z]+ )+)([A-Z]\w+) is (\d+) ([a-zA-Z]\w+)$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInValidMPCalculator -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testInValidMPCalculator(java.lang.String, java.lang.String, main.InputRegex)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testInValidMPCalculator" duration-ms="2" started-at="2016-07-28T02:26:27Z" data-provider="invalidMetalprices" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[how much wood could a woodchuck chuck if a woodchuck could chuck wood ?]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Wood]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[((?:[a-z]+ )+)([A-Z]\w+) is (\d+) ([a-zA-Z]\w+)$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInValidMPCalculator -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testInValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testInValidRomanTranslation" duration-ms="2" started-at="2016-07-28T02:26:27Z" data-provider="inValidGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@67c9d7e8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInValidRomanTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testInValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInValidRomanTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="inValidGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testInValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testInValidRomanTranslation" duration-ms="2" started-at="2016-07-28T02:26:27Z" data-provider="inValidGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@380dc55c]]>
+                <![CDATA[[Ljava.lang.String;@747df593]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInValidRomanTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInvalidArabicTranslation" duration-ms="5" started-at="2016-07-28T01:44:22Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testInvalidArabicTranslation" duration-ms="5" started-at="2016-07-28T02:26:27Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -72,11 +122,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInvalidArabicTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testInvalidArabicTranslation" duration-ms="2" started-at="2016-07-28T02:26:27Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -87,11 +137,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInvalidArabicTranslation" duration-ms="1" started-at="2016-07-28T01:44:22Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testInvalidArabicTranslation" duration-ms="1" started-at="2016-07-28T02:26:27Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -102,11 +152,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInvalidArabicTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testInvalidArabicTranslation" duration-ms="3" started-at="2016-07-28T02:26:27Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -117,11 +167,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInvalidArabicTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testInvalidArabicTranslation" duration-ms="3" started-at="2016-07-28T02:26:27Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -132,11 +182,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="4" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T02:26:27Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -152,11 +202,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T02:26:27Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -172,11 +222,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T02:26:27Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -192,11 +242,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T02:26:27Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -212,11 +262,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testValidArabicTranslation" duration-ms="2" started-at="2016-07-28T02:26:27Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -232,11 +282,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T02:26:27Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:27Z">
           <params>
             <param index="0">
               <value>
@@ -252,37 +302,97 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidArabicTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="3" started-at="2016-07-28T02:26:27Z" finished-at="2016-07-28T02:26:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidRomanTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="validGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testValidMPCalculator(java.lang.String, java.lang.String, main.InputRegex, double)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testValidMPCalculator" duration-ms="3" started-at="2016-07-28T02:26:28Z" data-provider="validMetalprices" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@25f52d1d]]>
+                <![CDATA[glob prok Gold is 57800 Credits]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gold]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[((?:[a-z]+ )+)([A-Z]\w+) is (\d+) ([a-zA-Z]\w+)$]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[14450.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidMPCalculator -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="2" started-at="2016-07-28T02:26:28Z" finished-at="2016-07-28T02:26:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testValidMPCalculator(java.lang.String, java.lang.String, main.InputRegex, double)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testValidMPCalculator" duration-ms="3" started-at="2016-07-28T02:26:28Z" data-provider="validMetalprices" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[glob glob Silver is 34 Credits]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Silver]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[((?:[a-z]+ )+)([A-Z]\w+) is (\d+) ([a-zA-Z]\w+)$]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[17.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidMPCalculator -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:28Z" finished-at="2016-07-28T02:26:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testValidRomanTranslation" duration-ms="3" started-at="2016-07-28T02:26:28Z" data-provider="validGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3c6c3450]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidRomanTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:28Z" finished-at="2016-07-28T02:26:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->
-        <test-method status="PASS" signature="testValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidRomanTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="validGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="testValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="testValidRomanTranslation" duration-ms="2" started-at="2016-07-28T02:26:28Z" data-provider="validGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T02:26:28Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[Ljava.lang.String;@364de63]]>
+                <![CDATA[[Ljava.lang.String;@63de8f2d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidRomanTranslation -->
-        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="3" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5526edd1]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T02:26:28Z" finished-at="2016-07-28T02:26:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanSlate -->

@@ -22,25 +22,26 @@ public class MetalPriceCalculator implements Processor {
 	public void process(String text,InputRegex regexMetalPrice) {
 		
 		Matcher m = regexMetalPrice.getPattern().matcher(text);
-		m.matches();
-		
-		String [] galacticNumbers = m.group(1).split("\\s");
-		String metalName = m.group(2);
-		int credits = Integer.parseInt(m.group(3));
-		
-		String romanNumerals = numTranslator.translateToRoman(galacticNumbers);
-		
-		if (romanNumerals==null)
-		{
-			GalaxyLogger.errorInp();
-			return;
+		if (m.matches()) {
+
+			String[] galacticNumbers = m.group(1).split("\\s");
+			String metalName = m.group(2);
+			int credits = Integer.parseInt(m.group(3));
+
+			String romanNumerals = numTranslator
+					.translateToRoman(galacticNumbers);
+
+			if (romanNumerals == null) {
+				GalaxyLogger.errorInp();
+				return;
+			}
+
+			double divisor = numTranslator.translateToArabic(romanNumerals);
+
+			double unitValue = credits / divisor;
+
+			mpChart.addMetalPrice(metalName, unitValue);
 		}
-		
-		double divisor = numTranslator.translateToArabic(romanNumerals);
-		
-		double unitValue = credits/divisor;
-		
-		mpChart.addMetalPrice(metalName, unitValue);
 		
 	}
 

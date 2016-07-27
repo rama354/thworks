@@ -23,6 +23,6 @@ public class MetalPriceChart {
 	
 	public double getMetalPrice(String metal)
 	{
-		return priceMap.get(metal);
+		return priceMap.get(metal)==null?0:priceMap.get(metal);
 	}
 }

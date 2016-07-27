@@ -1,10 +1,10 @@
 package test;
 
-import java.util.List;
 import java.util.Map;
 
 import main.InputRegex;
 import main.MetalPriceCalculator;
+import main.MetalPriceChart;
 import main.NumeralTranslator;
 import main.QuestionProcessor;
 
@@ -120,28 +120,45 @@ public class MerchantGalaxyGuideTest {
 	  }
 	 
 	 
-	 
-	 /*@Test(dataProvider = "metalprices",dependsOnMethods = { "testNumTranslatorProcess" })
-	 public void testMPCalculator(String text,InputRegex regex) 
+	 @Test(dataProvider = "validMetalprices",dependsOnMethods = { "testNumTranslatorProcess" })
+	 public void testValidMPCalculator(String text,String metal,InputRegex regex,double expected) 
 	 {
 		mpCalculator.process(text, regex);
 		MetalPriceChart mpChart=mpCalculator.getMpChart();
-		Assert.assertEquals(mpChart.getMetalPrice("Gold"),14450.0);
-		Assert.assertEquals(mpChart.getMetalPrice("Silver"),17.0);
-		//Assert.assertEquals(mpChart.getMetalPrice("Silver"),17.0);
+		
+		Assert.assertEquals(mpChart.getMetalPrice(metal),expected);
+		
 	 }
-	*/ 
-	 @DataProvider(name = "metalprices")
-	  public Object[][] metalPricesDP() 
+	
+	 @DataProvider(name = "validMetalprices")
+	  public Object[][] validmetalPricesDP() 
 	  {
 	    return new Object[][] {
-	      new Object[] { "glob prok Gold is 57800 Credits", InputRegex.METAL_PRICE },
-	      new Object[] { "glob glob Silver is 34 Credits", InputRegex.METAL_PRICE },
-	      new Object[] { "pish pish Iron is 3910 Credits", InputRegex.METAL_PRICE },
-	      //new Object[] { "how much is pish tegj prok ?", InputRegex.HOW_MUCH },
-	      new Object[] { "how much wood could a woodchuck chuck if a woodchuck could chuck wood ?", InputRegex.METAL_PRICE }
+	      new Object[] { "glob prok Gold is 57800 Credits", "Gold",InputRegex.METAL_PRICE,14450.0 },
+	      new Object[] { "glob glob Silver is 34 Credits", "Silver",InputRegex.METAL_PRICE,17.0 }
+	      
 	    };
 	  } 
+	
+	 
+	 @Test(dataProvider = "invalidMetalprices",dependsOnMethods = { "testNumTranslatorProcess" })
+	 public void testInValidMPCalculator(String text,String metal,InputRegex regex) 
+	 {
+		mpCalculator.process(text, regex);
+		MetalPriceChart mpChart=mpCalculator.getMpChart();
+		
+		Assert.assertEquals(mpChart.getMetalPrice(metal),0.0);
+	 }
+	
+	 @DataProvider(name = "invalidMetalprices")
+	  public Object[][] invalidmetalPricesDP() 
+	  {
+	    return new Object[][] {
+	      new Object[] { "pish pish Iron is 3910 Credits", "Iron",InputRegex.METAL_PRICE},
+	      new Object[] { "how much wood could a woodchuck chuck if a woodchuck could chuck wood ?","Wood", InputRegex.METAL_PRICE}
+	    };
+	  } 
+	
 	
 	/*@Test(dataProvider = "questions",dependsOnMethods = { "testMPCalculatorProcess" })
 	public void testQProcessor() 
