@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="16" passed="16">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="195" started-at="2016-07-27T20:14:22Z" finished-at="2016-07-27T20:14:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="195" started-at="2016-07-27T20:14:22Z" finished-at="2016-07-27T20:14:22Z">
+      <class name="test.MerchantGalaxyGuideTest">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="beforeClass" is-config="true" duration-ms="23" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testNumTranslatorProcess([Ljava.lang.String;, main.InputRegex)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testNumTranslatorProcess" duration-ms="18" started-at="2016-07-28T01:44:22Z" data-provider="galaxynumerals" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@101837c4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[^([a-z]+) is ([I|V|X|L|C|D|M])$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNumTranslatorProcess -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testInValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInValidRomanTranslation" duration-ms="4" started-at="2016-07-28T01:44:22Z" data-provider="inValidGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7484c2bf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInValidRomanTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testInValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInValidRomanTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="inValidGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@380dc55c]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInValidRomanTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInvalidArabicTranslation" duration-ms="5" started-at="2016-07-28T01:44:22Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInvalidArabicTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[VV]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInvalidArabicTranslation" duration-ms="1" started-at="2016-07-28T01:44:22Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IIII]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInvalidArabicTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IIIVI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testInvalidArabicTranslation(java.lang.String)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testInvalidArabicTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="invalidRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[VIIII]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="4" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[II]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[IV]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[III]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[VI]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[VIV]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testValidArabicTranslation(java.lang.String, int)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidArabicTranslation" duration-ms="3" started-at="2016-07-28T01:44:22Z" data-provider="validRomanNumeral" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[VIII]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidArabicTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="0" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidRomanTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="validGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@25f52d1d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidRomanTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="1" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+        <test-method status="PASS" signature="testValidRomanTranslation([Ljava.lang.String;)[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="testValidRomanTranslation" duration-ms="2" started-at="2016-07-28T01:44:22Z" data-provider="validGlxy" depends-on-methods="test.MerchantGalaxyGuideTest.testNumTranslatorProcess" finished-at="2016-07-28T01:44:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@364de63]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidRomanTranslation -->
+        <test-method status="PASS" signature="cleanSlate()[pri:0, instance:test.MerchantGalaxyGuideTest@5b4bf56d]" name="cleanSlate" is-config="true" duration-ms="3" started-at="2016-07-28T01:44:22Z" finished-at="2016-07-28T01:44:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanSlate -->
+      </class> <!-- test.MerchantGalaxyGuideTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

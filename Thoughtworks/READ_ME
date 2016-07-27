@@ -1,0 +1,44 @@
+						READ ME FILE
+================================================
+
+'Run as Java application' on eclipse or other IDE for execution
+
+
+Solution Flow
+=============
+a)Main.java contains 'static void main(String[] args)' to be invoked by JVM.This main method
+creates an instance of Parser.java & passes a Scanner object to it. Currently System.in is 
+used.
+
+b)Parser.java is the entry point & diverts incoming input lines to different processors based on 
+regex matches of the input. If no regex match is found,prints appropriate message.
+
+c)The different processors that are called from Parser are
+
+i) NumeralTranslator.java handles the translation of galaxy numbers to roman and 
+   roman to arabic
+   
+ii) MetalPriceCalculator.java performs the calculation of a single metal unit 
+	based on the input
+
+iii) QuestionProcessor.java processes the 'how much is......' question & 
+     'how many Credits is...' question & generates o/p
+     
+All 3 processors implement Processor.java interfaces
+
+
+Entities
+========
+There are 3 entities used in solution
+a) GalaxyNumerals.java - stores translated(roman) galaxy numerals
+b) RomanNumerals.java - stores translated(arabic) roman character.contains helper method
+for translation of a Roman numeral to Arabic counterpart.
+c) MetalPriceChart - stores the unit prices of different metals based on input
+
+Additional
+==========
+GalaxyLogger.java is used to generate o/p & error msgs
+InputRegex.java is an enum that hold regexes for expected types of input
+
+
+
