@@ -6,7 +6,8 @@
       <class name="test.MerchantGalaxyGuideTest">
         <methods>
           <include name="cleanSlate"/>
-          <include name="testInValidMPCalculator" invocation-numbers="1"/>
+          <include name="testRgxMismatchProcessor" invocation-numbers="0 1"/>
+          <include name="testValidMPCalculator"/>
           <include name="testNumTranslatorProcess"/>
           <include name="beforeClass"/>
         </methods>

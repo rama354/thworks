@@ -21,8 +21,14 @@ public class MetalPriceChart {
 		priceMap.put(metal, value);
 	}
 	
-	public double getMetalPrice(String metal)
+	public Double getMetalPrice(String metal)
 	{
-		return priceMap.get(metal)==null?0:priceMap.get(metal);
+		Double price=priceMap.get(metal);
+		if (price==null)
+			GalaxyLogger.nonCommodity(metal);
+		
+		return price;
+	
+		
 	}
 }

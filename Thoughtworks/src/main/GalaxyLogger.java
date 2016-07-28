@@ -40,13 +40,23 @@ public class GalaxyLogger{
 		
 	}
 
-	public static void inValidNumMsg(String gNum) {
+	public static void inValidGXNumMsg(String gNum) {
 		System.out.println(gNum +" is an invalid Galactic Numeral!!!!!");
 		
 	}
 
 	public static void errorInp() {
 		System.out.println("Incorrect input!!!!....Proceeding to next input");
+		
+	}
+
+	public static void inValidRMNumMsg(String rNum) {
+		System.out.println(rNum +" is an invalid Roman Numeral!!!!!");
+		
+	}
+	
+	public static void nonCommodity(String metal) {
+		System.out.println(metal +" is not a Commodity.No price AVAILABLE!!!");
 		
 	}
 }

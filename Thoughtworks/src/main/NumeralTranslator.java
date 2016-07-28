@@ -36,7 +36,7 @@ public class NumeralTranslator implements Processor {
 		{
 			if (!galaxyNumerals.isValid(gNum))
 			{
-				GalaxyLogger.inValidNumMsg(gNum);
+				GalaxyLogger.inValidGXNumMsg(gNum);
 				return null;
 			}
 			romanNumeral.append(galaxyNumerals.getRomanValue(gNum));
@@ -61,7 +61,7 @@ public class NumeralTranslator implements Processor {
 				
 			return actualArabicNumber;
 		}
-		
+		GalaxyLogger.inValidRMNumMsg(romanNumeral);
 		return -1;
 	}
 

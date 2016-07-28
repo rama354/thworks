@@ -55,8 +55,12 @@ public class QuestionProcessor implements Processor {
 		
 		int number = numTranslator.translateToArabic(romanNumerals);
 		
-		 if(number != -1 )
-			GalaxyLogger.howMuchOutput(m.group(1), number);	 
+		 if(number == -1 ){
+			 GalaxyLogger.errorInp();
+			 return;
+		 }
+			
+		 GalaxyLogger.howMuchOutput(m.group(1), number);	 
 		
 		 //return
 	}
@@ -73,26 +77,33 @@ public class QuestionProcessor implements Processor {
 		Matcher m = regexHowMany.getPattern().matcher(text);
 		m.matches();
 		
-		String [] galaxyNumbers = m.group(2).split("\\s");
-		String metalName = m.group(3);
+		String [] galaxyNumbers = m.group(1).split("\\s");
+		String metalName = m.group(2);
 		
 		String romanNumerals = numTranslator.translateToRoman(galaxyNumbers);
 		
 		if(romanNumerals==null)
 		{
-			GalaxyLogger.error("Question contains unknown Galaxy number.Moving to next question!!!!!");
+			GalaxyLogger.errorInp();
 			return;
 		}
 		
 		int metalUnits  = numTranslator.translateToArabic(romanNumerals);
 		
-		if(metalUnits != -1)
-		{
-			double totCredits = metalUnits * mpChart.getMetalPrice(metalName); 	
-			GalaxyLogger.howManyOutput(m.group(2), totCredits, metalName);
-			
+		if(metalUnits == -1)
+		{	
+			GalaxyLogger.errorInp();
+			return;
 		}
 		
-		//return
+		Double unitval=mpChart.getMetalPrice(metalName); 	
+		if (unitval==null)
+		{
+			GalaxyLogger.errorInp();
+			return;
+		}
+		double totCredits = metalUnits *unitval;
+		GalaxyLogger.howManyOutput(m.group(2), totCredits, metalName);
+	
 	}
 }

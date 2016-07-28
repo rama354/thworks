@@ -41,4 +41,10 @@ GalaxyLogger.java is used to generate o/p & error msgs
 InputRegex.java is an enum that hold regexes for expected types of input
 
 
+Unit Testing
+===========
+
+MerchantGalaxyGuideTest.java contains TestNG unit tests.
+(testng-6.9.10.jar is provided with project code)
+
 
