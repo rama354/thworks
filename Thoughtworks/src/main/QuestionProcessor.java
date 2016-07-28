@@ -49,14 +49,14 @@ public class QuestionProcessor implements Processor {
 		String romanNumerals = numTranslator.translateToRoman(galaxyNumbers);
 		if(romanNumerals==null)
 		{
-			GalaxyLogger.errorInp();
+			GalaxyLogger.errorInp(text);
 			return;
 		}
 		
 		int number = numTranslator.translateToArabic(romanNumerals);
 		
 		 if(number == -1 ){
-			 GalaxyLogger.errorInp();
+			 GalaxyLogger.errorInp(text);
 			 return;
 		 }
 			
@@ -84,7 +84,7 @@ public class QuestionProcessor implements Processor {
 		
 		if(romanNumerals==null)
 		{
-			GalaxyLogger.errorInp();
+			GalaxyLogger.errorInp(text);
 			return;
 		}
 		
@@ -92,18 +92,18 @@ public class QuestionProcessor implements Processor {
 		
 		if(metalUnits == -1)
 		{	
-			GalaxyLogger.errorInp();
+			GalaxyLogger.errorInp(text);
 			return;
 		}
 		
 		Double unitval=mpChart.getMetalPrice(metalName); 	
 		if (unitval==null)
 		{
-			GalaxyLogger.errorInp();
+			GalaxyLogger.errorInp(text);
 			return;
 		}
 		double totCredits = metalUnits *unitval;
-		GalaxyLogger.howManyOutput(m.group(2), totCredits, metalName);
+		GalaxyLogger.howManyOutput(m.group(1), totCredits, metalName);
 	
 	}
 }

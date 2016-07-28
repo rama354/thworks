@@ -19,7 +19,7 @@ public class GalaxyNumerals {
 	public void addNumeral(String galactic,String roman) {
 		
 		if( translation.containsKey(galactic))
-			GalaxyLogger.info("Translation already available!!!!!!");
+			GalaxyLogger.info("Translation already available for "+galactic+"!!!!!!");
 		else
 			translation.put(galactic, roman);
 		

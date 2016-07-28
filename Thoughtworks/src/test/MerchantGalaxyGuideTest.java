@@ -1,8 +1,8 @@
 package test;
 
+import java.util.List;
 import java.util.Map;
 
-import main.GalaxyLogger;
 import main.InputRegex;
 import main.MetalPriceCalculator;
 import main.MetalPriceChart;
@@ -91,7 +91,8 @@ public class MerchantGalaxyGuideTest {
 		return new Object[][] { new Object[] { "II", 2 },
 				new Object[] { "IV", 4 }, new Object[] { "III", 3 },
 				new Object[] { "VI", 6 }, new Object[] { "VIV", 9 },
-				new Object[] { "VIII", 8 } };
+				new Object[] { "VIII", 8 },
+				new Object[] { "MCMIII", 1903 }};
 	}
 
 	@Test(dataProvider = "invalidRomanNumeral", dependsOnMethods = { "testNumTranslatorProcess" })
@@ -211,6 +212,8 @@ public class MerchantGalaxyGuideTest {
 
 	@AfterMethod
 	public void cleanSlate() {
-		numTranslator.getRomanNumerals().getSignedArabicList().clear();
+		List<Integer> arabicList=numTranslator.getRomanNumerals().getSignedArabicList();
+		if (arabicList!=null)
+			arabicList.clear();
 	}
 }

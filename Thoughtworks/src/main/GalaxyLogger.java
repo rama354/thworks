@@ -45,8 +45,8 @@ public class GalaxyLogger{
 		
 	}
 
-	public static void errorInp() {
-		System.out.println("Incorrect input!!!!....Proceeding to next input");
+	public static void errorInp(String inp) {
+		System.out.println("<"+inp+"> is Incorrect input!!!!....Proceeding to next input");
 		
 	}
 
@@ -56,7 +56,7 @@ public class GalaxyLogger{
 	}
 	
 	public static void nonCommodity(String metal) {
-		System.out.println(metal +" is not a Commodity.No price AVAILABLE!!!");
+		System.out.println(metal +" has not be defined as a Commodity.No price AVAILABLE!!!");
 		
 	}
 }

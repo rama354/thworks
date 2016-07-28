@@ -30,12 +30,16 @@ public class MetalPriceCalculator implements Processor {
 		String romanNumerals = numTranslator.translateToRoman(galacticNumbers);
 
 		if (romanNumerals == null) {
-			GalaxyLogger.errorInp();
+			GalaxyLogger.errorInp(text);
 			return;
 		}
 
 		double divisor = numTranslator.translateToArabic(romanNumerals);
 
+		if (divisor==-1){
+			 GalaxyLogger.errorInp(text);
+			 return;
+		}
 		double unitValue = credits / divisor;
 
 		mpChart.addMetalPrice(metalName, unitValue);

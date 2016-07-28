@@ -6,10 +6,17 @@
       <class name="test.MerchantGalaxyGuideTest">
         <methods>
           <include name="cleanSlate"/>
-          <include name="testRgxMismatchProcessor" invocation-numbers="0 1"/>
+          <include name="testRgxMismatchProcessor"/>
+          <include name="testInValidQProcessor"/>
+          <include name="testValidArabicTranslation"/>
+          <include name="testInValidRomanTranslation"/>
+          <include name="testValidRomanTranslation"/>
+          <include name="testInValidMPCalculator"/>
+          <include name="testValidQProcessor"/>
           <include name="testValidMPCalculator"/>
           <include name="testNumTranslatorProcess"/>
           <include name="beforeClass"/>
+          <include name="testInvalidArabicTranslation"/>
         </methods>
       </class> <!-- test.MerchantGalaxyGuideTest -->
     </classes>

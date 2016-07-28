@@ -30,8 +30,6 @@ public class RomanNumerals {
 		translation.put('C', 100);
 		translation.put('D', 500);
 		translation.put('M', 1000);
-		signedArabicList = new ArrayList<Integer>();
-
 	}
 
 	public List<Integer> getSignedArabicList() {
@@ -82,6 +80,7 @@ public class RomanNumerals {
 	 * @param rNumeral
 	 */
 	private void createSignedArabicList(String rNumeral) {
+		signedArabicList = new ArrayList<Integer>();
 		int signCount = 0;
 		int arabicVal, nxtArabicVal;
 		for (int i = 0; i < rNumeral.length() - 1; i++) 
